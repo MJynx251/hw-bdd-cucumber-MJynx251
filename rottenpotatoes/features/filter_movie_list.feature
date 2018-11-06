@@ -46,3 +46,15 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
 
 Scenario: all ratings selected
   # see assignment
+  When I check the following ratings: G,PG,PG-13,R
+  And I press "Refresh"
+  Then I should see "Aladdin"
+  Then I should see "The Terminator"
+  Then I should see "When Harry Met Sally"
+  Then I should see "The Help"
+  Then I should see "Chocolat"
+  Then I should see "Amelie"
+  Then I should see "2001: A Space Odyssey"
+  Then I should see "The Incredibles"
+  Then I should see "Raiders of the Lost Ark"
+  Then I should see "Chicken Run"
