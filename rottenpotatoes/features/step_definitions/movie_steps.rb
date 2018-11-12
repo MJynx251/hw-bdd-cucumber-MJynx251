@@ -20,7 +20,7 @@ Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  page.body is the entire content of the page as a string.
     first = page.body.index(e1)
     second = page.body.index(e2)
-    first.should be < second
+    first < second
 end
 
 # Make it easier to express checking or unchecking several boxes at once
